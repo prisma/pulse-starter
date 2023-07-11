@@ -1,10 +1,10 @@
 {
-	"name": "pulse-railway-postgres-config",
+	"name": "pulse-railway-pg-template-base",
 	"version": "0.0.1",
 	"description": "Used to configure a postgres datbase for use with Pulse on railway.app",
-	"main": "src/index.ts",
+	"main": "index.js",
 	"scripts": {
-		"start": "ts-node src/index.ts"
+		"start": "ts-node config/config-db.ts"
 	},
 	"author": "Marc Hess",
 	"license": "MIT",
