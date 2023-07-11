@@ -1,6 +1,6 @@
 # Create a Pulse-ready postgres database on railway.app
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/tLfd_O?referralCode=z2q_3q)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/THgEmX?referralCode=VQ09uv)
 
 ## Once the template has deployed
 
