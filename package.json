@@ -1,0 +1,19 @@
+{
+	"name": "pulse-railway-postgres-config",
+	"version": "0.0.1",
+	"description": "Used to configure a postgres datbase for use with Pulse on railway.app",
+	"main": "src/index.ts",
+	"scripts": {
+		"start": "ts-node src/index.ts"
+	},
+	"author": "Marc Hess",
+	"license": "MIT",
+	"dependencies": {
+		"@types/node": "^16.9.1",
+		"@types/pg": "^8.10.2",
+		"dotenv": "^16.3.1",
+		"pg": "^8.11.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.4.2"
+	}
+}
