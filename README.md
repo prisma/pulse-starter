@@ -4,7 +4,7 @@
 
 > Pulse is currently in early access. Please sign up [here](https://prisma.io/pulse) or join our [discord](https://pris.ly/discord) and reach out to a developer advocate.
 
-## One the template is deployed
+## Once the template is deployed
 
 -   Go into your project on the railway dashboard
 -   Click on the **Postgres** database
