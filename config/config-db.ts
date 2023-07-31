@@ -13,8 +13,8 @@ async function main() {
 	try {
 		const db = await pool.connect();
 		const wal = await db.query("SHOW wal_level");
-		console.log(wal.rows[0]);
-		if (wal.rows[0] != "logical") {
+		console.log(wal.rows[0].wal_level);
+		if (wal.rows[0].wal_level != "logical") {
 			await db.query("DROP EXTENSION timescaledb");
 			await db.query("ALTER SYSTEM SET wal_level = logical");
 			await db.query("ALTER SYSTEM SET max_replication_slots = 20");
