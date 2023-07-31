@@ -1,7 +1,7 @@
 {
-	"name": "pulse-railway-template",
+	"name": "pulse-starter-project",
 	"version": "0.0.1",
-	"description": "Used to configure a postgres database for use with Pulse on railway.app",
+	"description": "An example project using Pulse and the pulse-railway-template on railway",
 	"main": "index.js",
 	"scripts": {
 		"start": "ts-node config/config-db.ts"
