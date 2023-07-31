@@ -28,11 +28,11 @@ async function main() {
 }
 
 main()
-	.then(async () => {
-		await pool.end();
+	.then(() => {
+		pool.end();
 		console.log("Db config script complete");
 	})
-	.catch(async (err) => {
-		await pool.end();
+	.catch((err) => {
+		pool.end();
 		console.log(err);
 	});
