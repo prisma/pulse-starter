@@ -1,14 +1,14 @@
 import { Pool } from "pg";
 
-const connection = {
-	user: process.env.PGUSER,
-	host: process.env.PGHOST,
-	database: process.env.PGDATABASE,
-	password: process.env.PGPASSWORD,
-	port: Number(process.env.PGPORT),
-};
-const pool = new Pool(connection);
 async function main() {
+	const connection = {
+		user: process.env.PGUSER,
+		host: process.env.PGHOST,
+		database: process.env.PGDATABASE,
+		password: process.env.PGPASSWORD,
+		port: Number(process.env.PGPORT),
+	};
+	const pool = new Pool(connection);
 	try {
 		const db = await pool.connect();
 		const wal = await db.query("SHOW wal_level");
@@ -27,12 +27,4 @@ async function main() {
 	}
 }
 
-main()
-	.then(() => {
-		pool.end();
-		console.log("Db config script complete");
-	})
-	.catch((err) => {
-		pool.end();
-		console.log(err);
-	});
+main();
