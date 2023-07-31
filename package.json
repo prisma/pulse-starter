@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "prisma migrate deploy",
+		"prestart": "ts-node config/confgi-db.ts",
 		"start": "ts-node index.ts"
 	},
 	"author": "Marc Hess",
