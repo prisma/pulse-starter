@@ -1,6 +1,6 @@
 # Create a Pulse Starter Project on railway.app
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/THgEmX?referralCode=VQ09uv)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pulse-starter?referralCode=VQ09uv)
 
 This project is used together with the [prisma/pulse-railway-pg-config](https://github.com/prisma/pulse-railway-pg-config) repo to build a template on [railway.app](https://railway.app). However, you can use this project as a basic Pulse starter project by cloning this repo locally and connecting it to any Pulse-ready Postgres database.
 
