@@ -24,14 +24,14 @@ You will need to follow the steps from the [prisma/pulse-railway-pg-config](http
 ### Rebuild the service
 
 -   Click on the **Deployments** tab.
--   Click on the three verticle dots on the deployment that failed. Then click **Redeploy**
+-   Click on the three verticle dots on the deployment that failed. Then click **Redeploy**.
 -   When the deployment starts, click the **View Logs** button.
 -   Then click on the **Deploy Logs** tab.
 -   If everything is set up properly, you should see a message that looks like the following.
     ```bash
     Hello from   12fcb1f8adc06640f7d89483bb4ce89d7b3cf7444df7b34ea5b706ed8919a6e6
     ```
--   This means that your Pulse project is running and listening for events from your database.
+This means that your Pulse project is running and listening for events from your database.
 
 ### See an event in action
 
@@ -52,7 +52,7 @@ Congrats! You now have a Pulse project up and running on [railway.app](railway.a
 
 ## Local development
 
-To work on this repo locally. You should have a repo in your GitHub account that is a fork of this repo. If you used the railway template. Otherwise, you can clone this repo directly.
+If you used the Railway template, you can clone the repo in your GitHub account that is a fork of this repo. Otherwise, you can clone this repo directly.
 
 -   You will need to add your `DATABASE_URL` and `PULSE_API_KEY` to a `.env` file in the root of the project.
 -   You can then run the following command to get started.
@@ -69,6 +69,6 @@ To work on this repo locally. You should have a repo in your GitHub account that
 
 ## More information about Pulse
 
+-   [Pulse documentation](https://pris.ly/pulse-docs)
 -   [Pulse setup video](https://www.youtube.com/watch?v=Lvn05wM26zs)
 -   [Pulse announcement blog post](https://www.prisma.io/blog/introducing-pulse-jtu4UPC8ujy4)
--   [Pulse documentation](https://pris.ly/pulse-docs)
