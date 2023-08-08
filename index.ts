@@ -1,4 +1,3 @@
-// prisma.ts
 import "dotenv/config";
 import { PrismaClient } from "@prisma/client";
 import { withPulse } from "@prisma/extension-pulse";
