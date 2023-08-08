@@ -8,7 +8,6 @@ const apiKey: string =
 const prisma = new PrismaClient().$extends(withPulse({ apiKey: apiKey }));
 
 async function main() {
-	console.log("hello from the other side");
 	const subscription = await prisma.user.subscribe();
 
 	if (subscription instanceof Error) {
