@@ -2,8 +2,6 @@
 
 This repository has been created to help you get started with [Pulse](https://prisma.io/pulse). You will be able to use this project with any Pulse-ready PostgreSQL database. This project comes with a basic [`prisma.schema`](./prisma/schema.prisma) file as well as a Pulse subscription found in the [`index.ts`](./index.ts) file.
 
-> Pulse is currently in Early Access. Please sign up [here](https://prisma.io/pulse) and join our community on [Slack](https://slack.prisma.io) or [Discord](https://pris.ly/discord) to share your feedback.
-
 Table of contents:
 
 -   [Local development](#local-development)
