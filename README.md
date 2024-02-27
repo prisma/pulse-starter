@@ -4,17 +4,18 @@ This repository has been created to help you get started with [Pulse](https://pr
 
 Table of contents:
 
--   [Local development](#local-development)
-    -   [1. Clone the respository](#1-clone-the-respository)
-    -   [2. Create and fill out a `.env` file](#2-create-and-fill-out-a-env-file)
-    -   [3. Run the database migration](#3-run-the-database-migration)
-    -   [4. Start the Pulse subscription](#4-start-the-pulse-subscription)
-    -   [5. Test the subscription](#5-test-the-subscription)
--   [Create a Pulse Starter Project on railway.app](#create-a-pulse-starter-project-on-railwayapp)
-    -   [Once the template is deployed](#once-the-template-is-deployed)
-        -   [Setup Guide](#setup-guide)
--   [More example Pulse projects](#more-example-pulse-projects)
--   [More information about Pulse](#more-information-about-pulse)
+- [Pulse starter project](#pulse-starter-project)
+  - [Local development](#local-development)
+    - [1. Clone the respository](#1-clone-the-respository)
+    - [2. Create and fill out a `.env` file](#2-create-and-fill-out-a-env-file)
+    - [3. Run the database migration](#3-run-the-database-migration)
+    - [4. Start the Pulse subscription](#4-start-the-pulse-subscription)
+    - [5. Test the subscription](#5-test-the-subscription)
+  - [Deploy a Pulse Starter Project on railway.app](#deploy-a-pulse-starter-project-on-railwayapp)
+    - [Once the template is deployed](#once-the-template-is-deployed)
+      - [Setup Guide](#setup-guide)
+  - [More example Pulse projects](#more-example-pulse-projects)
+  - [More information about Pulse](#more-information-about-pulse)
 
 ## Local development
 
@@ -94,7 +95,7 @@ The following instructions use Prisma Studio to create a new record in the `User
 ```json
 {
 	"action": "create",
-	"after": {
+	"created": {
 		"id": 1,
 		"email": "test@prisma.io",
 		"name": "test"
@@ -141,11 +142,9 @@ You will see three things in your railway project:
 
 <summary>2. Restart your database</summary>
 
-1. Go into your project on the railway dashboard.
-1. Click on the **Postgres** database.
-1. Navigate to the **Settings** tab.
-1. Click the button that says **Restart Database**.
-1. Your database is getting restarted.
+1. Click on your database.
+1. Navigate to the Deployments tab.
+1. Go into the three-dots menu on the latest deployment and click the Restart option.
 
 </details>
 
