@@ -120,6 +120,8 @@ This project is used together with the [prisma/pulse-railway-pg-config](https://
 
 [![Watch the setup template setup video](https://img.youtube.com/vi/0nt7CLDqYeY/0.jpg)](https://www.youtube.com/watch?v=0nt7CLDqYeY)
 
+>  For the most current configuration details, please refer to our [documentation](https://www.prisma.io/docs/pulse/database-setup/railway), as information in the video may be outdated.
+
 ## More example Pulse projects
 
 - [Prisma Pulse examples](https://pris.ly/pulse-examples)
