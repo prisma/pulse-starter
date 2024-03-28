@@ -113,7 +113,7 @@ The following instructions uses [Prisma Studio](https://www.prisma.io/studio) to
 ## Deployment
 
 ### Deploy the Pulse Starter Project on railway.app
-
+You can also deploy this project on Railway by following the instructions in our [docs](https://www.prisma.io/docs/pulse/database-setup/railway#setup-with-template-prisma-pulse-db--app).
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pulse-starter?referralCode=VQ09uv)
 
 This project is used together with the [prisma/pulse-railway-pg-config](https://github.com/prisma/pulse-railway-pg-config) repo to build a template on [railway.app](https://railway.app).
