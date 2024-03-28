@@ -6,8 +6,8 @@ This repository has been created to help you get started with [Pulse](https://pr
 
 To successfully run the project, you will need the following:
 
-- A Database URL compatible with Prisma Pulse. To setup the database, refer to our comprehensive guide [here](https://www.prisma.io/docs/pulse/database-setup) for instructions.
-- A Prisma Pulse API Key. You can obtain a `PULSE_API_KEY` from your Prisma Data Platform](https://pris.ly/pdp) account.
+- The **connection string** of a Pulse-compatible database (if you don't have one yet, you can configure your database following the instructions in our [docs](https://www.prisma.io/docs/pulse/database-setup) or [use a Railway template](https://railway.app/template/pulse-pg?referralCode=VQ09uv))
+- A **Pulse API key** which you can get by enabling Pulse in a project in your [Prisma Data Platform](https://pris.ly/pdp) account
   
 ## Getting started
 
