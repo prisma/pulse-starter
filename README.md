@@ -59,15 +59,15 @@ This will run a basic subscription on the `User` table. The code can be found in
 
 ```ts
 async function main() {
- const subscription = await prisma.user.subscribe();
+  const subscription = await prisma.user.subscribe();
 
- if (subscription instanceof Error) {
-  throw subscription;
- }
+  if (subscription instanceof Error) {
+    throw subscription;
+  }
 
- for await (const event of subscription) {
-  console.log("just received an event:", event);
- }
+  for await (const event of subscription) {
+    console.log("just received an event:", event);
+  }
 }
 ```
 
