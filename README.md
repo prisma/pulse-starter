@@ -2,27 +2,12 @@
 
 This repository has been created to help you get started with [Pulse](https://prisma.io/pulse). You will be able to use this project with any Pulse-ready PostgreSQL database. This project comes with a basic [`prisma.schema`](./prisma/schema.prisma) file as well as a Pulse subscription found in the [`index.ts`](./index.ts) file.
 
-## Table of contents
-
-- [Prerequisites](#prerequisites)
-- [Local development](#local-development)
-  - [1. Clone the respository](#1-clone-the-respository)
-  - [2. Create and fill out a `.env` file](#2-create-and-fill-out-a-env-file)
-  - [3. Run the database migration](#3-run-the-database-migration)
-  - [4. Start the Pulse subscription](#4-start-the-pulse-subscription)
-  - [5. Test the subscription](#5-test-the-subscription)
-- [Deployment](#deployment)
-  - [Deploy the Pulse Starter Project on railway.app](#deploy-the-pulse-starter-project-on-railwayapp)
-- [More example Pulse projects](#more-example-pulse-projects)
-- [More information about Pulse](#more-information-about-pulse)
-
 ## Prerequisites
 
 To successfully run the project, you will need the following:
 
-- A Prisma Pulse-compatible database
-  - Refer to our comprehensive guide [here](https://www.prisma.io/docs/pulse/database-setup) for setup instructions, or deploy a Pulse-ready database on Railway [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pulse-pg?referralCode=VQ09uv)
-- An active [Prisma Data Platform](https://pris.ly/pdp) account for obtaining a Prisma Pulse API Key
+- A Database URL compatible with Prisma Pulse. To setup the database, refer to our comprehensive guide [here](https://www.prisma.io/docs/pulse/database-setup) for instructions.
+- A Prisma Pulse API Key. You can obtain a `PULSE_API_KEY` from your Prisma Data Platform](https://pris.ly/pdp) account.
   
 ## Getting started
 
@@ -44,12 +29,10 @@ Rename the existing `.env.example` to `.env`:
 mv .env.example .env
 ```
 
-<details><summary>The <code>.env</code> file contains the following environment variables:</summary>
-
-    DATABASE_URL=""
-    PULSE_API_KEY=""
-
-</details>
+```bash
+DATABASE_URL="postgres://postgres:password@host:PORT/database_name" 
+PULSE_API_KEY="your_secure_pulse_api_key"
+```
 
 - `DATABASE_URL`: The connection string to your database.
 - `PULSE_API_KEY`: Reference the [Environment API Keys](https://www.prisma.io/docs/platform/concepts/environments#api-keys) section in our documentation to learn how get an API key for your Pulse project.
@@ -99,30 +82,24 @@ The following instructions uses [Prisma Studio](https://www.prisma.io/studio) to
 3. Return to your terminal where you ran the `npx ts-node index.ts` command.
 4. If everything is set up properly you will see an output that is similar to the following.
 
-```json
-{
- "action": "create",
- "created": {
-  "id": 1,
-  "email": "test@prisma.io",
-  "name": "test"
- }
-}
-```
+    ```json
+    {
+      "action": "create",
+      "created": {
+        "id": 1,
+        "email": "test@prisma.io",
+        "name": "test"
+      }
+    }
+    ```
 
 ## Deployment
 
 You can also deploy this project on Railway by following the instructions in our [docs](https://www.prisma.io/docs/pulse/database-setup/railway#setup-with-template-prisma-pulse-db--app).
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pulse-starter?referralCode=VQ09uv)
 
-
->  For the most current configuration details, please refer to our [documentation](https://www.prisma.io/docs/pulse/database-setup/railway), as information in the video may be outdated.
-
-## More example Pulse projects
+## Resources
 
 - [Prisma Pulse examples](https://pris.ly/pulse-examples)
-
-## More information about Pulse
-
 - [Pulse documentation](https://pris.ly/pulse-docs)
 - [Pulse GA announcement blog post](https://pris.ly/gh/pulse-ga)
