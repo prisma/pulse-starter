@@ -24,7 +24,7 @@ To successfully run the project, you will need the following:
   - Refer to our comprehensive guide [here](https://www.prisma.io/docs/pulse/database-setup) for setup instructions, or deploy a Pulse-ready database on Railway [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pulse-pg?referralCode=VQ09uv)
 - An active [Prisma Data Platform](https://pris.ly/pdp) account for obtaining a Prisma Pulse API Key
   
-## Local development
+## Getting started
 
 ### 1. Clone the respository
 
