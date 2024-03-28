@@ -96,6 +96,7 @@ The following instructions uses [Prisma Studio](https://www.prisma.io/studio) to
 ## Deployment
 
 You can also deploy this project on Railway by following the instructions in our [docs](https://www.prisma.io/docs/pulse/database-setup/railway#setup-with-template-prisma-pulse-db--app).
+
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/pulse-starter?referralCode=VQ09uv)
 
 ## Resources
