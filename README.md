@@ -29,6 +29,8 @@ Rename the existing `.env.example` to `.env`:
 mv .env.example .env
 ```
 
+Now go into the `.env` file and update the `DATABASE_URL` and `PULSE_API_KEY` environment variables:
+
 ```bash
 DATABASE_URL="postgres://postgres:password@host:PORT/database_name" 
 PULSE_API_KEY="your_secure_pulse_api_key"
