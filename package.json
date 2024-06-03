@@ -11,7 +11,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"@prisma/client": "^5.10.2",
-		"@prisma/extension-pulse": "^1.0.1",
+		"@prisma/extension-pulse": "^1.1.0",
 		"@types/node": "^16.9.1",
 		"dotenv": "^16.3.1",
 		"prisma": "^5.10.2",
